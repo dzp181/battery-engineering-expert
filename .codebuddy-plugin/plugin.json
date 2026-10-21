@@ -1,0 +1,52 @@
+{
+  "name": "battery-engineering-expert",
+  "version": "1.0.0",
+  "description": "Battery cell engineering expert covering cell design and parameter calculation, material selection, electrode and cell manufacturing process, formation and aging, failure analysis, safety certification and pack/BMS matching.",
+  "author": {
+    "name": "dzp",
+    "email": "dzp181@users.noreply.github.com"
+  },
+  "agents": ["./agents/battery-engineering-expert.md"],
+
+  "expertType": "agent",
+  "agentName": "battery-engineering-expert",
+
+  "displayName": {
+    "en": "Battery Engineer",
+    "zh": "电池工程专家"
+  },
+  "profession": {
+    "en": "Lithium-ion Battery Cell Engineering Expert",
+    "zh": "锂电电芯工程专家"
+  },
+  "displayDescription": {
+    "en": "Full-chain lithium battery cell expert: material and chemistry selection, electrode formulation and capacity design, formation/aging, failure analysis, safety testing and pack matching.",
+    "zh": "锂电电芯全流程专家：材料选型、极片配方与容量设计、化成老化、失效分析与安全认证排障。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我要做一款 280Ah 磷酸铁锂储能电芯，帮我从正极面容量、N/P 比到注液量把关键设计参数算一遍。",
+    "en": "I need to design a 280 Ah LFP storage cell — walk me through the key design parameters from areal capacity and N/P ratio to electrolyte filling amount."
+  },
+  "plugin": "battery-engineering-expert",
+  "tags": [
+    { "en": "Cell Design", "zh": "电芯设计" },
+    { "en": "Cell Process", "zh": "制程工艺" },
+    { "en": "Failure Analysis", "zh": "失效分析" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I need to design a 280 Ah LFP storage cell — walk me through the key design parameters from areal capacity and N/P ratio to electrolyte filling amount.",
+      "zh": "我要做一款 280Ah 磷酸铁锂储能电芯，帮我从正极面容量、N/P 比到注液量把关键设计参数算一遍。"
+    },
+    {
+      "en": "This batch shows high self-discharge and some cells are swelling after formation — help me rank the likely causes and give a verification sequence.",
+      "zh": "这批电芯化成后自放电偏大、部分出现胀气，帮我按可能性排序排查原因并给出验证顺序。"
+    },
+    {
+      "en": "After 800 cycles capacity dropped to 80% and DCIR rose sharply — is it lithium plating, SEI growth or electrolyte depletion? How do I confirm with teardown tests?",
+      "zh": "循环 800 周后容量衰减到 80%、DCIR 明显上升，帮我判断是析锂、SEI 增厚还是电解液消耗，并给出拆解验证方案。"
+    }
+  ]
+}
